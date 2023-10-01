@@ -1,60 +1,52 @@
 <?php
+echo "<h1>Trabajo practico N°2 - Estructuras de Decisión<h1>";
+echo "<br>";
+echo "<h3>Punto 1:<h3>";
 
-echo "Hola mundo!";
+$n = 5 ;
+if ($n > 0){
+    echo "El número ingresado es un
+    número positivo";
+}
+echo "<br>";
+echo "<br>";
+echo "<h3>Punto 2:<h3>";
+if($n > 1 && $n < 10){
+    echo "El número ingresado es mayor a 1 y menor a 10";
+}
+echo "<br>";
+echo "<br>";
+echo "<h3>Punto 3:<h3>";
+if($n >= 10 || $n < 2){
+    echo "El número ingresado es mayor o igual a 10 o menor a 2";
+}
+else{
+    echo "El número ingresado no pudo ser validado";
+}
+echo "<br>";
+echo "<br>";
+echo "<h3>Punto 4:<h3>";//
+$numero1 = 4;
+$numero2 = 5 ;
 
-echo "<br>" ;
-$variable = "Hola mundo";
-echo $variable;
+if($numero1 > $numero2){ //Si numero1 es mayor a numero2, imprimir la suma y la resta
+    echo $numero1 + $numero2;
+    echo "<br>";
+    echo $numero1 - $numero2;
+    echo "<br>";
+}
+elseif($numero1 < $numero2){//Si numero2 es mayor a numero1, mostrar por pantalla la multiplicación, la división entera y el res
+    echo $numero2 * $numero1;
+    echo "<br>";
+    echo $numero2 / $numero1;
+    echo "<br>";
+    echo $numero2 % $numero1;//arreglar!! 
+    echo "<br>";
+}
 
-$numero1 = 10;
-$numero2 = 5;
-echo "<br>" ;
-echo "Suma:";
-echo "<br>" ;
-echo $numero1 + $numero2;
-echo "<br>" ;
-echo "Resta:";
-echo "<br>" ;
-echo $numero1 - $numero2;
-echo "<br>" ;
-echo "Multiplicación:";
-echo "<br>" ;
-echo $numero1 * $numero2; 
-echo "<br>" ;
-echo "División:";
-echo "<br>" ;
-echo $numero1 / $numero2;
-echo "<br>" ;
-echo "Resto:";
-echo "<br>" ;
-echo $numero1 % $numero2;
-echo "<br>" ;
-
-echo " Celsius a Fahrenheit:";
-echo "<br>" ;
-echo(20 * 9/5) + 32 ;
-echo "<br>" ;
-
-$alto = 12;
-$base = 18;
-echo "Perimetro de rectangulo";
-echo "<br>" ;
-echo $alto * 2 + $base * 2; //perimetro
-echo "<br>" ;
-echo "Área de rectangulo";
-echo "<br>" ;
-echo $alto * $base; //area
-
-echo "<br>" ;
-
-$radio = 30 ;
-$pi = 3.14 ;
-echo "Perimetro de círculo:";
-echo "<br>" ;
-echo 2 * $pi * $radio;//perimetro
-echo "<br>" ;
-echo "Área de círculo:";
-echo "<br>" ;
-echo $pi * ($radio * $radio);//area
+elseif ($numero1 == $numero2){ //si son iguales imprimir  
+    echo "Los números ingresados son iguales";
+    
+}
 
 ?>
